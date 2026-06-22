@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bu6x3drq7s5dl"
+path="res://.godot/imported/ui_menu_popup_message_02.wav-3a08549d1936c2ba3b5e36f7d0c9eecf.sample"
+
+[deps]
+
+source_file="res://Assets/TestAssets/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/User_Interface_Menu/ui_menu_popup_message_02.wav"
+dest_files=["res://.godot/imported/ui_menu_popup_message_02.wav-3a08549d1936c2ba3b5e36f7d0c9eecf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

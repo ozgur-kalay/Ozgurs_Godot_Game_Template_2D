@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://drowrc1iuccp2"]
+
+[ext_resource type="Script" uid="uid://be28drlft2ujy" path="res://UI/InputSettingsMenu/input_settings_menu.gd" id="1_gderg"]
+[ext_resource type="PackedScene" uid="uid://bdlk5sjr5e2k5" path="res://UI/InputSettingsMenu/RemapButtonSystem/RemapInputField/remap_input_field.tscn" id="2_qcv0p"]
+[ext_resource type="Script" uid="uid://u72bs0ld7sf7" path="res://UI/InputSettingsMenu/RemapButtonSystem/RemapButtonInitializer/remap_button_initializer.gd" id="3_n5s2u"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_qcv0p"]
+device = -1
+keycode = 87
+unicode = 119
+
+[sub_resource type="Resource" id="Resource_qcv0p"]
+script = ExtResource("3_n5s2u")
+button_text = "W"
+event = SubResource("InputEventKey_qcv0p")
+metadata/_custom_type_script = "uid://u72bs0ld7sf7"
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_qcv0p"]
+axis = 1
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_n5s2u"]
+script = ExtResource("3_n5s2u")
+button_text = "Joy Up"
+event = SubResource("InputEventJoypadMotion_qcv0p")
+metadata/_custom_type_script = "uid://u72bs0ld7sf7"
+
+[node name="InputSettingsMenu" type="Control" unique_id=2066789291]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gderg")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=656081106]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1216172862]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=1941702337]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1920308772]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer" unique_id=778987578]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=399989101]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 50
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1807660060]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer" unique_id=899870765]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "ACTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1940621748]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer2" unique_id=539609391]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "PRIMARY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1914025427]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer3" unique_id=1519375933]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "ALTERNATIVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InputFieldsContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=1975457111]
+custom_minimum_size = Vector2(600, 300)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="RemapInputField" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/InputFieldsContainer" unique_id=1415074924 instance=ExtResource("2_qcv0p")]
+layout_mode = 2
+action_name = "up"
+undo_available = true
+button_initializers = Array[ExtResource("3_n5s2u")]([SubResource("Resource_qcv0p"), SubResource("Resource_n5s2u")])
+
+[node name="LoadDefaultsButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=419725533]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+text = "Load Defaults
+"

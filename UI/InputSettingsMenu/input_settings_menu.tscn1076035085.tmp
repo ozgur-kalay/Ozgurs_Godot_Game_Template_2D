@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://drowrc1iuccp2"]
+
+[ext_resource type="PackedScene" uid="uid://dyvkkf5vhw6yw" path="res://UI/InputSettingsMenu/InputField/input_field.tscn" id="1_8jl3b"]
+[ext_resource type="Script" uid="uid://be28drlft2ujy" path="res://UI/InputSettingsMenu/input_settings_menu.gd" id="1_gderg"]
+[ext_resource type="Script" uid="uid://8b6kxd8eax55" path="res://UI/InputSettingsMenu/InputField/ActionButtonRes/action_button_res.gd" id="3_qcv0p"]
+
+[sub_resource type="Resource" id="Resource_qcv0p"]
+script = ExtResource("3_qcv0p")
+metadata/_custom_type_script = "uid://8b6kxd8eax55"
+
+[node name="InputSettingsMenu" type="Control" unique_id=2066789291 node_paths=PackedStringArray("input_fields_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gderg")
+input_fields_container = NodePath("CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/InputFieldsContainer")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=656081106]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1216172862]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=1941702337]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1920308772]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer" unique_id=778987578]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=399989101]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1807660060]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer" unique_id=899870765]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "ACTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1940621748]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer2" unique_id=539609391]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "PRIMARY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1914025427]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer3" unique_id=1519375933]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "ALTERNATIVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer4" type="PanelContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer" unique_id=1406100054]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/PanelContainer4" unique_id=1174072539]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 5
+text = "Defaults"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InputFieldsContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=1975457111]
+custom_minimum_size = Vector2(600, 300)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="InputField" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/InputFieldsContainer" unique_id=158643808 instance=ExtResource("1_8jl3b")]
+layout_mode = 2
+action_buttons = Array[ExtResource("3_qcv0p")]([SubResource("Resource_qcv0p")])
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer" unique_id=1061834706]
+layout_mode = 2
+alignment = 2
+
+[node name="LoadDefaultsButton" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer2" unique_id=419725533]
+layout_mode = 2
+text = "Load Defaults
+"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/CenterContainer/VBoxContainer/HBoxContainer2/LoadDefaultsButton" to="." method="_on_load_defaults_button_pressed"]

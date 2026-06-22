@@ -1,0 +1,12 @@
+extends Node
+
+@onready var ui_button_simple_click_01: AudioStreamPlayer = $"../MenuSoundFXContainer/UiButtonSimpleClick01"
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("ui_select"):
+		ui_button_simple_click_01.play()

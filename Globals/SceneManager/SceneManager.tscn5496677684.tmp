@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b3upw4cvkr6hn"]
+
+[ext_resource type="Script" uid="uid://clbtxvfglmjk8" path="res://Globals/SceneManager/scene_manager.gd" id="1_57dd3"]
+[ext_resource type="PackedScene" uid="uid://cogchb6tej578" path="res://Scenes/intro_scene.tscn" id="2_on46c"]
+[ext_resource type="PackedScene" uid="uid://dgpjf7g37gky4" path="res://Decorators/PrintName/debug_name.tscn" id="3_wb1kj"]
+
+[node name="SceneManager" type="Node2D" unique_id=712512455]
+script = ExtResource("1_57dd3")
+show_current_scene_name = true
+starting_scene = null
+scene_repository = Dictionary[StringName, PackedScene]({
+&"IntroScene": ExtResource("2_on46c")
+})
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1942129006]
+
+[node name="Debug_Scene_Name" type="CenterContainer" parent="CanvasLayer" unique_id=2086170167]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 69.0
+grow_horizontal = 2
+
+[node name="Debug_Scene_Name_Label" type="Label" parent="CanvasLayer/Debug_Scene_Name" unique_id=1663985787]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "adasd"
+
+[node name="DebugName" parent="." unique_id=223885185 instance=ExtResource("3_wb1kj")]

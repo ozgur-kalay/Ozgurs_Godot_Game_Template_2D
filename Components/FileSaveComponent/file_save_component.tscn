@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bflbi2se4ry6w"]
+
+[ext_resource type="Script" uid="uid://bxg6bdt3knkxx" path="res://Components/FileSaveComponent/file_save_component.gd" id="1_13gis"]
+
+[node name="FileSaveComponent" type="Node" unique_id=93987895]
+script = ExtResource("1_13gis")

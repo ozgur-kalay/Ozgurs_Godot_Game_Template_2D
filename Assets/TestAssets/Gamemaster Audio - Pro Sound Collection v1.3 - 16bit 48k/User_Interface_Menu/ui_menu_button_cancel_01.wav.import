@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cyymyduf0alpj"
+path="res://.godot/imported/ui_menu_button_cancel_01.wav-e4a6bdc0c9ecc017dc8a7e13de3fe099.sample"
+
+[deps]
+
+source_file="res://Assets/TestAssets/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/User_Interface_Menu/ui_menu_button_cancel_01.wav"
+dest_files=["res://.godot/imported/ui_menu_button_cancel_01.wav-e4a6bdc0c9ecc017dc8a7e13de3fe099.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

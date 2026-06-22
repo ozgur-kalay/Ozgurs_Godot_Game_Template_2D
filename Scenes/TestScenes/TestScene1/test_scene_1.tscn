@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://jncufblvcdb0"]
+
+[ext_resource type="PackedScene" uid="uid://cfxp5y8jxemmu" path="res://Scenes/BaseScene/base_scene.tscn" id="1_fakor"]
+[ext_resource type="Script" uid="uid://lx5mkvxss2eu" path="res://Globals/Debug/TestNodes/rt_log_test.gd" id="2_6106b"]
+[ext_resource type="Script" uid="uid://bap5itqqb33j5" path="res://Scenes/TestScenes/TestScene1/test_scene_1.gd" id="2_d5nsc"]
+[ext_resource type="Script" uid="uid://bxg6bdt3knkxx" path="res://Components/FileSaveComponent/file_save_component.gd" id="3_46v54"]
+
+[node name="TestScene" unique_id=953958746 instance=ExtResource("1_fakor")]
+script = ExtResource("2_d5nsc")
+
+[node name="RT_LogTest" type="Node" parent="Tests" parent_id_path=PackedInt32Array(507371978) index="0" unique_id=57982144]
+script = ExtResource("2_6106b")
+
+[node name="HSlider" type="HSlider" parent="SceneContent" parent_id_path=PackedInt32Array(1454894929) index="0" unique_id=533653192]
+offset_left = 571.0
+offset_top = 373.0
+offset_right = 1179.0
+offset_bottom = 389.0
+
+[node name="FileSaveComponent" type="Node" parent="SceneContent/HSlider" index="0" unique_id=615589338 node_paths=PackedStringArray("save_signals")]
+script = ExtResource("3_46v54")
+properties = Array[StringName]([&"value"])
+save_signals = {
+NodePath(".."): &"value_changed"
+}
+metadata/_custom_type_script = "uid://bxg6bdt3knkxx"

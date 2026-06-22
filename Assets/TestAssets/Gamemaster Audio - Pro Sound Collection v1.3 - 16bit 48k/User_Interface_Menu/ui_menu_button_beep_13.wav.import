@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cb6ptmi2jcygx"
+path="res://.godot/imported/ui_menu_button_beep_13.wav-279ab82d033a8045597c38b449c8237a.sample"
+
+[deps]
+
+source_file="res://Assets/TestAssets/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/User_Interface_Menu/ui_menu_button_beep_13.wav"
+dest_files=["res://.godot/imported/ui_menu_button_beep_13.wav-279ab82d033a8045597c38b449c8237a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://f6y73ara4ywp"]
+
+[ext_resource type="Script" uid="uid://kfxe1kqolqp8" path="res://Globals/Debug/TestNodes/SignalTest/signal_test.gd" id="1_l3hx7"]
+
+[node name="SignalTest" type="Node" unique_id=1082331092]
+script = ExtResource("1_l3hx7")

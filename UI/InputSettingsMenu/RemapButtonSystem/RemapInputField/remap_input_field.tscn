@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bdlk5sjr5e2k5"]
+
+[ext_resource type="Script" uid="uid://dwaec40evm3v1" path="res://UI/InputSettingsMenu/RemapButtonSystem/RemapInputField/remap_input_field.gd" id="1_l1o25"]
+
+[node name="RemapInputField" type="Control" unique_id=1415074924 node_paths=PackedStringArray("button_contianer")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_l1o25")
+button_contianer = NodePath("CenterContainer/MainContainer/RemapButtonsContainer")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1140336324]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainContainer" type="HBoxContainer" parent="CenterContainer" unique_id=641482482]
+layout_mode = 2
+theme_override_constants/separation = 150
+
+[node name="ActionNameLabel" type="Label" parent="CenterContainer/MainContainer" unique_id=1228326751]
+layout_mode = 2
+text = "Action Name"
+
+[node name="RemapButtonsContainer" type="HBoxContainer" parent="CenterContainer/MainContainer" unique_id=1176701993]
+layout_mode = 2

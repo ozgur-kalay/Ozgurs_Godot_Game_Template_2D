@@ -1,0 +1,1 @@
+GameEntryScene is a scene that allows the game to start. It has no functionality and is removed immidiately after game loads.

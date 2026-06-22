@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://87lv8clll7ly"
+path="res://.godot/imported/ui_text_type_scroll_effect_02.wav-1692c3aa3b05afcb4530393496a3800e.sample"
+
+[deps]
+
+source_file="res://Assets/TestAssets/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/User_Interface_Menu/ui_text_type_scroll_effect_02.wav"
+dest_files=["res://.godot/imported/ui_text_type_scroll_effect_02.wav-1692c3aa3b05afcb4530393496a3800e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

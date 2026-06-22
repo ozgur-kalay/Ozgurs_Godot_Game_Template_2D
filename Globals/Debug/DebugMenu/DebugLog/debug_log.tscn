@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://6obqga8br4pm"]
+
+[ext_resource type="Script" uid="uid://bgxoseghtdq7t" path="res://Globals/Debug/DebugMenu/DebugLog/debug_log.gd" id="1_e60sn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5mmre"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.34117648, 0.101960786, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="DebugLog" type="PanelContainer" unique_id=1139281748]
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_5mmre")
+script = ExtResource("1_e60sn")
+
+[node name="Label" type="Label" parent="." unique_id=1178717051]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3

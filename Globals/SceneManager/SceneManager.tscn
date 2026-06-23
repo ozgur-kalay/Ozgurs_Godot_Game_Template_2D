@@ -9,7 +9,6 @@
 [node name="SceneManager" type="Node2D" unique_id=712512455]
 script = ExtResource("1_57dd3")
 test_scene = ExtResource("2_bo5nt")
-starting_scene_option = 1
 target_scene_name = &"MainMenuScene"
 show_current_scene_name = true
 scene_repository = Dictionary[StringName, PackedScene]({

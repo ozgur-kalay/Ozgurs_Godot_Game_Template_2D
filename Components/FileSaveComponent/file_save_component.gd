@@ -10,9 +10,15 @@ signal load_failed
 
 @export var enebled: bool = true
 
-## OPTIONAL: If left empty then "ownername.name.bin" is used as the file name. Example Main.Player.bin
-@export var file_name: String
+## OPTIONAL: If left empty then "ownername.name.bin" is used as the file name. Example Main.Player.bin. DO NOT ADD FILE EXTENSION.
+@export var custom_file_name: String :
+	get: return custom_file_name
+	set(val):
+		custom_file_name = val
+		file_name = custom_file_name
 		
+var file_name: String
+
 @export var encryption_key: String = "my_secret_key"
 ## Calls load when clients ready signal is emitted. Intended to be used at the start of the application
 @export var load_on_client_ready: bool = true
@@ -21,7 +27,6 @@ signal load_failed
 @export var properties: Array[StringName]
 
 @export var debug_print_messages: bool
-
 
 @export_group("Save and Load on Signals")
 ## Save will be called on these signals
@@ -33,7 +38,6 @@ var client: Node
 var dir_path: String
 var file_path: String
 var print_header: String
-
 
 func _ready() -> void:
 	if Engine.is_editor_hint(): return
@@ -161,5 +165,7 @@ func _log_message(_error: bool, ...message) -> void:
 		printerr(print_header, message)
 		return
 	print(print_header, message)
-	
+
+func has_saved_data() -> bool:
+	return FileAccess.file_exists(file_path)
 	

@@ -77,7 +77,6 @@ step = 5.0
 
 [node name="FileSaveComponent" type="Node" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/MenuMusicSliderContainer/HBoxContainer/MenuMusicSlider" unique_id=1797939627 node_paths=PackedStringArray("save_signals")]
 script = ExtResource("3_foajj")
-file_name = "AudioSettingsMenu.MenuMusicSlider"
 properties = Array[StringName]([&"value"])
 save_signals = {
 NodePath(".."): &"value_changed"
@@ -90,7 +89,6 @@ text = "Mute"
 
 [node name="FileSaveComponent" type="Node" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/MenuMusicSliderContainer/HBoxContainer/MuteCheckBox" unique_id=176698723 node_paths=PackedStringArray("save_signals")]
 script = ExtResource("3_foajj")
-file_name = "AudioSettingsMenu.MenuMusicMute"
 properties = Array[StringName]([&"button_pressed"])
 save_signals = {
 NodePath(".."): &"toggled"
@@ -141,7 +139,6 @@ text = "Mute"
 
 [node name="FileSaveComponent" type="Node" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/MenuSFXSliderContainer/HBoxContainer/MuteCheckBox" unique_id=1164295222 node_paths=PackedStringArray("save_signals")]
 script = ExtResource("3_foajj")
-file_name = "AudioSettingsMenu.MenuSFXMute"
 properties = Array[StringName]([&"button_pressed"])
 save_signals = {
 NodePath(".."): &"toggled"
@@ -193,7 +190,6 @@ text = "Mute"
 
 [node name="FileSaveComponent" type="Node" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/GameMusicSliderContainer/HBoxContainer/MuteCheckBox" unique_id=1471591848 node_paths=PackedStringArray("save_signals")]
 script = ExtResource("3_foajj")
-file_name = "AudioSettingsMenu.GameMusicMute"
 properties = Array[StringName]([&"button_pressed"])
 save_signals = {
 NodePath(".."): &"toggled"

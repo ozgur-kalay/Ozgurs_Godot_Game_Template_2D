@@ -2,10 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cfxp5y8jxemmu" path="res://Scenes/BaseScene/base_scene.tscn" id="1_jf31c"]
 [ext_resource type="Script" uid="uid://kfxe1kqolqp8" path="res://Globals/Debug/TestNodes/SignalTest/signal_test.gd" id="2_cgklw"]
-[ext_resource type="Script" uid="uid://do3dmu67vt3pc" path="res://Scenes/main_menu_tab_container.gd" id="3_6no0a"]
-[ext_resource type="PackedScene" uid="uid://bfpy2sfpsbhdv" path="res://UI/AudioSettingsMenu/audio_settings_menu.tscn" id="3_cgklw"]
-[ext_resource type="PackedScene" uid="uid://drowrc1iuccp2" path="res://UI/InputSettingsMenu/input_settings_menu.tscn" id="4_3y7gg"]
-[ext_resource type="PackedScene" uid="uid://c7mfqh5oaiuc0" path="res://UI/GraphicsSettingsMenu/graphics_settings_menu.tscn" id="5_qxuap"]
+[ext_resource type="PackedScene" uid="uid://dkpls3yok64bk" path="res://UI/MainMenu/MainMenu.tscn" id="3_ms8yy"]
 
 [node name="MainMenu" unique_id=953958746 instance=ExtResource("1_jf31c")]
 
@@ -14,59 +11,4 @@ script = ExtResource("2_cgklw")
 
 [node name="MenuCanvasLayer" type="CanvasLayer" parent="SceneContent" parent_id_path=PackedInt32Array(1454894929) index="0" unique_id=1597209212]
 
-[node name="MenuBase" type="Control" parent="SceneContent/MenuCanvasLayer" index="0" unique_id=2029688876]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="SceneContent/MenuCanvasLayer/MenuBase" index="0" unique_id=2117707705]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 400
-theme_override_constants/margin_top = 200
-theme_override_constants/margin_right = 400
-theme_override_constants/margin_bottom = 200
-
-[node name="MainMenuTabContainer" type="TabContainer" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer" index="0" unique_id=1098594526]
-layout_mode = 2
-current_tab = 2
-script = ExtResource("3_6no0a")
-
-[node name="General" type="TabBar" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer" index="1" unique_id=1581471860]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 0
-
-[node name="Audio Settings" type="TabBar" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer" index="2" unique_id=1025534160]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 1
-
-[node name="AudioSettingsMenu" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer/Audio Settings" index="1" unique_id=2101504996 instance=ExtResource("3_cgklw")]
-layout_mode = 1
-
-[node name="Input Settings" type="TabBar" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer" index="3" unique_id=1477679149]
-layout_mode = 2
-metadata/_tab_index = 2
-
-[node name="InputSettingsMenu" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer/Input Settings" index="1" unique_id=2066789291 instance=ExtResource("4_3y7gg")]
-layout_mode = 1
-
-[node name="Graphics" type="TabBar" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer" index="4" unique_id=1606458612]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 3
-
-[node name="GraphicsSettingsMenu" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer/Graphics" index="1" unique_id=702105541 instance=ExtResource("5_qxuap")]
-layout_mode = 1
-
-[node name="ConfirmationDialog" type="ConfirmationDialog" parent="SceneContent/MenuCanvasLayer/MenuBase/MarginContainer/MainMenuTabContainer" index="5" unique_id=1231931529]
-ok_button_text = "Apply"
-dialog_text = "Apply changes?"
+[node name="MainMenu" parent="SceneContent/MenuCanvasLayer" index="0" unique_id=1757275538 instance=ExtResource("3_ms8yy")]

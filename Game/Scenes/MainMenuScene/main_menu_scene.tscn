@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxt48u5gttr8h"]
+
+[ext_resource type="PackedScene" uid="uid://cfxp5y8jxemmu" path="res://Engine/Scene/BaseScene/base_scene.tscn" id="1_jf31c"]
+[ext_resource type="Script" uid="uid://kfxe1kqolqp8" path="res://Engine/Globals/Debug/TestNodes/SignalTest/signal_test.gd" id="2_cgklw"]
+[ext_resource type="PackedScene" uid="uid://dkpls3yok64bk" path="res://Engine/UI/MainMenu/MainMenu.tscn" id="3_ms8yy"]
+
+[node name="MainMenu" unique_id=953958746 instance=ExtResource("1_jf31c")]
+
+[node name="SignalTest" type="Node" parent="Tests" parent_id_path=PackedInt32Array(507371978) index="0" unique_id=1713539910]
+script = ExtResource("2_cgklw")
+
+[node name="MenuCanvasLayer" type="CanvasLayer" parent="SceneContent" parent_id_path=PackedInt32Array(1454894929) index="0" unique_id=1597209212]
+
+[node name="MainMenu" parent="SceneContent/MenuCanvasLayer" index="0" unique_id=1757275538 instance=ExtResource("3_ms8yy")]

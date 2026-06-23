@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b3upw4cvkr6hn"]
+
+[ext_resource type="Script" uid="uid://clbtxvfglmjk8" path="res://Engine/Globals/SceneManager/scene_manager.gd" id="1_57dd3"]
+[ext_resource type="PackedScene" uid="uid://jncufblvcdb0" path="res://Game/Scenes/TestScenes/TestScene1/test_scene_1.tscn" id="2_bo5nt"]
+[ext_resource type="PackedScene" uid="uid://cogchb6tej578" path="res://Game/Scenes/intro_scene.tscn" id="2_on46c"]
+[ext_resource type="PackedScene" uid="uid://cxt48u5gttr8h" path="res://Game/Scenes/MainMenuScene/main_menu_scene.tscn" id="3_gsrfq"]
+[ext_resource type="PackedScene" uid="uid://dgpjf7g37gky4" path="res://Engine/Components/DebugName/debug_name.tscn" id="3_wb1kj"]
+
+[node name="SceneManager" type="Node2D" unique_id=712512455]
+script = ExtResource("1_57dd3")
+test_scene = ExtResource("2_bo5nt")
+target_scene_name = &"MainMenuScene"
+show_current_scene_name = true
+scene_repository = Dictionary[StringName, PackedScene]({
+&"IntroScene": ExtResource("2_on46c"),
+&"MainMenuScene": ExtResource("3_gsrfq")
+})
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1942129006]
+
+[node name="Debug_Scene_Name" type="PanelContainer" parent="CanvasLayer" unique_id=1864859082]
+offset_right = 87.0
+offset_bottom = 69.0
+
+[node name="Debug_Scene_Name_Label" type="Label" parent="CanvasLayer/Debug_Scene_Name" unique_id=1663985787]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 15
+text = "adasd"
+
+[node name="DebugName" parent="." unique_id=223885185 instance=ExtResource("3_wb1kj")]

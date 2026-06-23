@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dgpjf7g37gky4"]
+
+[ext_resource type="Script" uid="uid://tb5oopg8ff1i" path="res://Engine/Components/DebugName/debug_name.gd" id="1_fmcnp"]
+
+[node name="DebugName" type="Node" unique_id=223885185]
+script = ExtResource("1_fmcnp")

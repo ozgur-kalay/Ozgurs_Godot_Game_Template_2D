@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cmt7g18ase43u"]
+
+[ext_resource type="Script" uid="uid://dodhn7ndojjph" path="res://Engine/Components/Enabler/enabler.gd" id="1_v0x1v"]
+
+[node name="Enabler" type="Node" unique_id=264765899]
+script = ExtResource("1_v0x1v")

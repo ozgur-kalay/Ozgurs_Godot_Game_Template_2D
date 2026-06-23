@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfxp5y8jxemmu"]
+
+[ext_resource type="Script" uid="uid://cpeqcgk7vbqxc" path="res://Engine/Scene/BaseScene/base_scene.gd" id="1_5yig4"]
+[ext_resource type="PackedScene" uid="uid://dgpjf7g37gky4" path="res://Engine/Components/DebugName/debug_name.tscn" id="2_wks5k"]
+
+[node name="BaseScene" type="Node2D" unique_id=953958746]
+script = ExtResource("1_5yig4")
+
+[node name="Debug" type="Node" parent="." unique_id=902543715]
+
+[node name="DebugName" parent="Debug" unique_id=223885185 instance=ExtResource("2_wks5k")]
+
+[node name="Tests" type="Node2D" parent="." unique_id=507371978]
+
+[node name="SceneContent" type="Node2D" parent="." unique_id=1454894929]

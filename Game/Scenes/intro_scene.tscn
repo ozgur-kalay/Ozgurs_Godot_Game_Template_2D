@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cogchb6tej578"]
+
+[ext_resource type="PackedScene" uid="uid://cfxp5y8jxemmu" path="res://Engine/Scene/BaseScene/base_scene.tscn" id="1_d30j0"]
+[ext_resource type="PackedScene" uid="uid://f6y73ara4ywp" path="res://Engine/Globals/Debug/TestNodes/SignalTest/signal_test.tscn" id="2_bbocs"]
+
+[node name="IntroScene" unique_id=953958746 node_paths=PackedStringArray("signal_clients") instance=ExtResource("1_d30j0")]
+signal_clients = {
+NodePath("Tests/SignalTest"): &"test_signal"
+}
+
+[node name="SignalTest" parent="Tests" parent_id_path=PackedInt32Array(507371978) index="0" unique_id=1082331092 instance=ExtResource("2_bbocs")]
